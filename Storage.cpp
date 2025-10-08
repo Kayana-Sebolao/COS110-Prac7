@@ -10,7 +10,7 @@ Storage<T>::Storage(int size){
 }
 template <typename T>
 Storage<T>::~Storage(){
-for (int i =0, i< size; i++){
+for (int i =0; i< size; i++){
     if(data[i] != NULL){
     delete data[i];
     data[i] == NULL;
@@ -35,3 +35,5 @@ void Storage<T>::print(){
     }   
     std::cout<<"]"<<std::endl;
 }
+
+

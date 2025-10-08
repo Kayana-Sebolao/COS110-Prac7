@@ -16,9 +16,9 @@ public:
 Storage(int size);
 virtual ~Storage();
 void print();
-void addData(T value);
-void removeData(T value);
-int getIndex(T value);
+virtual void addData(T value) = 0;
+virtual void removeData(T value) = 0;
+virtual int getIndex(T value) = 0;
 
 };
 
