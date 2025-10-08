@@ -5,7 +5,7 @@ Storage<T>::Storage(int size){
     this->size = size;
     data = new T*[size];
     for(int i =0; i < size; i++){
-        data[i] == NULL;
+        data[i] = NULL;
     }
 }
 template <typename T>
@@ -13,7 +13,7 @@ Storage<T>::~Storage(){
 for (int i =0; i< size; i++){
     if(data[i] != NULL){
     delete data[i];
-    data[i] == NULL;
+    data[i] = NULL;
     }
 }
     delete[] data;

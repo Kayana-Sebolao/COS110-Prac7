@@ -1,3 +1,6 @@
+#ifndef REVERSESTRATEGY_H
+#define REVERSESTRATEGY_H
+
 #include "Storage.h"
 
 template <typename T>
@@ -8,3 +11,7 @@ virtual void addData(T value);
 virtual void removeData(T value);
 virtual int getIndex(T value);
 };
+
+#include "ReverseStrategy.cpp"
+#endif
+

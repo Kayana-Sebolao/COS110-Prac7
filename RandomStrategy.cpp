@@ -1,3 +1,4 @@
+
 #include "RandomStrategy.h"
 
 template <typename T>
@@ -54,3 +55,4 @@ int RandomStrategy<T>::getIndex(T value){
     }
     return -1;
 }
+

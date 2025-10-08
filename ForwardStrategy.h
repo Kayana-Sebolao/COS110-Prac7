@@ -1,3 +1,6 @@
+#ifndef FORWARDSTRATEGY_H
+#define FORWARDSTRATEGY_H
+
 #include "Storage.h"
 template <typename T>
 class ForwardStrategy : public Storage<T>{
@@ -7,3 +10,6 @@ class ForwardStrategy : public Storage<T>{
     virtual void removeData(T value);
     virtual int getIndex(T value);
 };
+
+#include "ForwardStrategy.cpp"
+#endif

@@ -1,3 +1,4 @@
+
 #include "ForwardStrategy.h"
 template <typename T>
 ForwardStrategy<T>::ForwardStrategy(int size): Storage<T>(size){   
@@ -43,3 +44,4 @@ int ForwardStrategy<T>::getIndex(T value){
     }
     return - 1;
 }
+

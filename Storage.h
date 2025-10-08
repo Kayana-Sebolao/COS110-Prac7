@@ -9,7 +9,7 @@
 template <typename T>
 
 class Storage{
-private:
+protected:
 T** data;
 int size;
 public:
@@ -21,5 +21,5 @@ virtual void removeData(T value) = 0;
 virtual int getIndex(T value) = 0;
 
 };
-
+#include "Storage.cpp"
 #endif

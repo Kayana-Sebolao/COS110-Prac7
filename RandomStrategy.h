@@ -1,3 +1,5 @@
+#ifndef RANDOMSTRATEGY_H
+#define RANDOMSTRATEGY_H
 #include "Storage.h"
 
 template <typename T>
@@ -12,3 +14,6 @@ virtual void addData(T value);
 virtual void removeData(T value);
 virtual int getIndex(T value);
 };
+
+#include "RandomStrategy.cpp"
+#endif
